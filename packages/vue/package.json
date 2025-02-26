@@ -1,5 +1,5 @@
 {
-  "name": "@ionic/vue",
+  "name": "ionic-global-back-gesture-vue",
   "version": "8.4.3",
   "description": "Vue specific wrapper for @ionic/core",
   "scripts": {
@@ -68,7 +68,7 @@
     "vue-router": "^4.0.16"
   },
   "dependencies": {
-    "@ionic/core": "^8.4.3",
+    "ionic-global-back-gesture": "^8.4.3-1",
     "ionicons": "^7.0.0"
   },
   "vetur": {

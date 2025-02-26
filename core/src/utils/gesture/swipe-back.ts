@@ -4,6 +4,13 @@ import { isRTL } from '../rtl';
 import type { Gesture, GestureDetail } from './index';
 import { createGesture } from './index';
 
+declare global {
+  interface Window {
+    threshold: any;
+    stopBackGesture: any;
+  }
+}
+
 export const createSwipeBackGesture = (
   el: HTMLElement,
   canStartHandler: () => boolean,
@@ -20,7 +27,10 @@ export const createSwipeBackGesture = (
    * to go back gesture should proceed.
    */
   const isAtEdge = (detail: GestureDetail) => {
-    const threshold = 50;
+    const threshold = window.threshold;
+    if (window.stopBackGesture) {
+      return
+    }
     const { startX } = detail;
 
     if (rtl) {
