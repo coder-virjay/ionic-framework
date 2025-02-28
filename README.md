@@ -68,7 +68,7 @@ Start a new project by following our [documentation](https://ionicframework.com/
 We would love to hear from you! If you have any feedback or run into issues using our framework, please file
 an [issue](https://github.com/ionic-team/ionic-framework/issues/new) on this repository.
 
-### How To Use
+### Installation
 
 1. 生成本地包，并作为全局包使用
 
@@ -84,6 +84,11 @@ an [issue](https://github.com/ionic-team/ionic-framework/issues/new) on this rep
 ```
 
 2. 进入到使用的目录：`npm link @ionic/core @ionic/vue`
+
+### Usage
+
+1. 全局返回范围：默认左侧 50 像素。自定义可全局赋值，例如：`window.threshold = 100`
+2. 停用全局手势：`window.stopBackGesture = true`
 
 ### Migration Guides
 
