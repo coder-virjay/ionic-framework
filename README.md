@@ -73,14 +73,15 @@ an [issue](https://github.com/ionic-team/ionic-framework/issues/new) on this rep
 1. 生成本地包，并作为全局包使用
 
 ```shell
-   cd core && \
-   npm install && \
-   npm run build && \
-   npm link && \
-   cd ../packages/vue && \
-   npm install && \
-   npm run build && \
-   npm link
+cd core && \
+npm install && \
+npm run build && \
+npm link && \
+cd ../packages/vue && \
+npm install && \
+npm link @ionic/core
+npm run build && \
+npm link
 ```
 
 2. 进入到使用的目录：`npm link @ionic/core @ionic/vue`
