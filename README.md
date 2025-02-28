@@ -80,19 +80,17 @@ an [issue](https://github.com/ionic-team/ionic-framework/issues/new) on this rep
    npm run build && \
    npm link
    ```
-
-```
 2. 进入到使用的目录：`npm link @ionic/core @ionic/vue`
 
 ### Migration Guides
 
 Already have an Ionic app? These guides will help you migrate to the latest versions.
 
-* [Migrate from v7 to v8](https://ionicframework.com/docs/updating/8-0)
-* [Migrate from v6 to v7](https://ionicframework.com/docs/updating/7-0)
-* [Migrate from v5 to v6](https://ionicframework.com/docs/updating/6-0)
-* [Migrate from v4 to v5](https://ionicframework.com/docs/updating/5-0)
-* [Migrate from v3 to v4](https://ionicframework.com/docs/updating/4-0)
+- [Migrate from v7 to v8](https://ionicframework.com/docs/updating/8-0)
+- [Migrate from v6 to v7](https://ionicframework.com/docs/updating/7-0)
+- [Migrate from v5 to v6](https://ionicframework.com/docs/updating/6-0)
+- [Migrate from v4 to v5](https://ionicframework.com/docs/updating/5-0)
+- [Migrate from v3 to v4](https://ionicframework.com/docs/updating/4-0)
 
 ### Examples
 
@@ -115,6 +113,9 @@ Please note that this project is released with a [Contributor Code of Conduct](h
 
 The source code for earlier versions of the Ionic Framework may exist in other repositories. Please open issues and pull requests in their respective repositories.
 
-* **Ionic 2/3**: Moved to [`ionic-team/ionic-v3`](https://github.com/ionic-team/ionic-v3)
-* **Ionic 1**: Moved to [`ionic-team/ionic-v1`](https://github.com/ionic-team/ionic-v1)
+- **Ionic 2/3**: Moved to [`ionic-team/ionic-v3`](https://github.com/ionic-team/ionic-v3)
+- **Ionic 1**: Moved to [`ionic-team/ionic-v1`](https://github.com/ionic-team/ionic-v1)
+
+```
+
 ```
