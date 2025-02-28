@@ -5,11 +5,12 @@
 </p>
 
 <h1 align="center">
-  Ionic
+全局返回手势
+  Ionic Global Gesture
 </h1>
 
 <p align="center">
-  Ionic is an open source app development toolkit for building modern, fast, top-quality cross-platform native and Progressive Web Apps from a single codebase with JavaScript and the Web.
+  Ionic 修改为自定义全局返回手势，构建媲美 App 的应用程序。
 </p>
 <p align="center">
   Ionic is based on <a href="https://www.webcomponents.org/introduction">Web Components</a>, which enables significant performance, usability, and feature improvements alongside support for popular web frameworks like <a href="https://angular.io/">Angular</a>, <a href="https://reactjs.com/">React</a>, and <a href="https://vuejs.org/">Vue</a>.
@@ -52,12 +53,12 @@
 
 ### Packages
 
-| Project | Package | Version | Downloads| Links |
-| ------- | ------- | ------- | -------- |:-----:|
-| **Core** | [`@ionic/core`](https://www.npmjs.com/package/@ionic/core) | [![version](https://img.shields.io/npm/v/@ionic/core/latest.svg)](https://www.npmjs.com/package/@ionic/core) | <a href="https://www.npmjs.com/package/@ionic/core" target="_blank"><img src="https://img.shields.io/npm/dm/@ionic/core.svg" alt="NPM Downloads" /></a> | [`README.md`](core/README.md)
-| **Angular** | [`@ionic/angular`](https://www.npmjs.com/package/@ionic/angular) | [![version](https://img.shields.io/npm/v/@ionic/angular/latest.svg)](https://www.npmjs.com/package/@ionic/angular) | <a href="https://www.npmjs.com/package/@ionic/angular" target="_blank"><img src="https://img.shields.io/npm/dm/@ionic/angular.svg" alt="NPM Downloads" /></a> | [`README.md`](packages/angular/README.md)
-| **Vue** | [`@ionic/vue`](https://www.npmjs.com/package/@ionic/vue) | [![version](https://img.shields.io/npm/v/@ionic/vue/latest.svg)](https://www.npmjs.com/package/@ionic/vue) | <a href="https://www.npmjs.com/package/@ionic/vue" target="_blank"><img src="https://img.shields.io/npm/dm/@ionic/vue.svg" alt="NPM Downloads" /></a> | [`README.md`](packages/vue/README.md)
-| **React** | [`@ionic/react`](https://www.npmjs.com/package/@ionic/react) | [![version](https://img.shields.io/npm/v/@ionic/react/latest.svg)](https://www.npmjs.com/package/@ionic/react) | <a href="https://www.npmjs.com/package/@ionic/react" target="_blank"><img src="https://img.shields.io/npm/dm/@ionic/react.svg" alt="NPM Downloads" /></a> |[`README.md`](packages/react/README.md)
+| Project     | Package                                                          | Version                                                                                                            | Downloads                                                                                                                                                     |                   Links                   |
+| ----------- | ---------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------- | :---------------------------------------: |
+| **Core**    | [`@ionic/core`](https://www.npmjs.com/package/@ionic/core)       | [![version](https://img.shields.io/npm/v/@ionic/core/latest.svg)](https://www.npmjs.com/package/@ionic/core)       | <a href="https://www.npmjs.com/package/@ionic/core" target="_blank"><img src="https://img.shields.io/npm/dm/@ionic/core.svg" alt="NPM Downloads" /></a>       |       [`README.md`](core/README.md)       |
+| **Angular** | [`@ionic/angular`](https://www.npmjs.com/package/@ionic/angular) | [![version](https://img.shields.io/npm/v/@ionic/angular/latest.svg)](https://www.npmjs.com/package/@ionic/angular) | <a href="https://www.npmjs.com/package/@ionic/angular" target="_blank"><img src="https://img.shields.io/npm/dm/@ionic/angular.svg" alt="NPM Downloads" /></a> | [`README.md`](packages/angular/README.md) |
+| **Vue**     | [`@ionic/vue`](https://www.npmjs.com/package/@ionic/vue)         | [![version](https://img.shields.io/npm/v/@ionic/vue/latest.svg)](https://www.npmjs.com/package/@ionic/vue)         | <a href="https://www.npmjs.com/package/@ionic/vue" target="_blank"><img src="https://img.shields.io/npm/dm/@ionic/vue.svg" alt="NPM Downloads" /></a>         |   [`README.md`](packages/vue/README.md)   |
+| **React**   | [`@ionic/react`](https://www.npmjs.com/package/@ionic/react)     | [![version](https://img.shields.io/npm/v/@ionic/react/latest.svg)](https://www.npmjs.com/package/@ionic/react)     | <a href="https://www.npmjs.com/package/@ionic/react" target="_blank"><img src="https://img.shields.io/npm/dm/@ionic/react.svg" alt="NPM Downloads" /></a>     |  [`README.md`](packages/react/README.md)  |
 
 Looking for the `ionic-angular` package? Ionic 3 has been moved to the [`ionic-v3`](https://github.com/ionic-team/ionic-v3) repo. See [Earlier Versions](#earlier-versions).
 
@@ -66,6 +67,22 @@ Looking for the `ionic-angular` package? Ionic 3 has been moved to the [`ionic-v
 Start a new project by following our [documentation](https://ionicframework.com/docs/).
 We would love to hear from you! If you have any feedback or run into issues using our framework, please file
 an [issue](https://github.com/ionic-team/ionic-framework/issues/new) on this repository.
+
+### How To Use
+
+1. ```shell
+   cd core && \
+   npm install && \
+   npm run build && \
+   npm link && \
+   cd ../packages/vue && \
+   npm install && \
+   npm run build && \
+   npm link
+   ```
+
+```
+2. 进入到使用的目录：`npm link @ionic/core @ionic/vue`
 
 ### Migration Guides
 
@@ -100,3 +117,4 @@ The source code for earlier versions of the Ionic Framework may exist in other r
 
 * **Ionic 2/3**: Moved to [`ionic-team/ionic-v3`](https://github.com/ionic-team/ionic-v3)
 * **Ionic 1**: Moved to [`ionic-team/ionic-v1`](https://github.com/ionic-team/ionic-v1)
+```
