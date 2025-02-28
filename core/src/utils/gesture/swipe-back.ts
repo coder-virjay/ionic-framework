@@ -27,7 +27,7 @@ export const createSwipeBackGesture = (
    * to go back gesture should proceed.
    */
   const isAtEdge = (detail: GestureDetail) => {
-    const threshold = window.threshold;
+    const threshold = window.threshold || 50;
     if (window.stopBackGesture) {
       return
     }
